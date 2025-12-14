@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+
+  /* Full-screen background image */
+  background-image: url("assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Header + nav */
+
+header {
+  background: #0f172a;
+  color: #fff;
+  padding: 0.8rem 0;
+  margin-bottom: 0;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.logo-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #38bdf8, #22c55e);
+}
+
+.logo-text {
+  font-size: 0.95rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+nav a {
+  color: #e5e7eb;
+  text-decoration: none;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.9rem;
+}
+
+nav a:hover {
+  background: #1e293b;
+}
+
+/* Hero section */
+
+.hero {
+  background: radial-gradient(circle at top left, #1d2537 0, #020617 50%, #020617 100%);
+  color: #e5e7eb;
+  padding: 3rem 0 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  text-align: left;
+}
+
+.hero-image img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid rgba(148, 163, 184, 0.5);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.8);
+}
+
+.hero-text {
+  max-width: 420px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+}
+
+.hero-role {
+  color: #38bdf8;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.hero-intro {
+  margin-bottom: 0.8rem;
+  color: #cbd5f5;
+}
+
+/* Override main container spacing since hero already has padding */
+main.container {
+  margin-top: 0;
+}
+
+/* General sections */
+
+main section {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+}
+
+h2 {
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+h3 {
+  margin-top: 0.8rem;
+  margin-bottom: 0.4rem;
+}
+
+p {
+  margin-bottom: 0.6rem;
+}
+
+/* Cards and buttons */
+
+.card-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  background: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 0.8rem;
+  flex: 1 1 200px;
+}
+
+.btn {
+  display: inline-block;
+  background: #0077cc;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border-radius: 3px;
+  margin-top: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.btn:hover {
+  background: #005fa3;
+}
+
+/* Document preview */
+
+.doc-preview {
+  width: 100%;
+  max-width: 100%;
+  height: 350px;
+  border: 1px solid #d1d5db;
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  background: #f9fafb;
+}
+
+.doc-preview iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Video wrappers */
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin-bottom: 0.8rem;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Photo grid */
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.8rem;
+}
+
+.photo-grid img {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+}
+
+figcaption {
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+}
+
+/* Links list */
+
+.link-list {
+  list-style: none;
+}
+
+.link-list li {
+  margin-bottom: 0.3rem;
+}
+
+.link-list a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.link-list a:hover {
+  text-decoration: underline;
+}
+
+/* Misc */
+
+.placeholder {
+  color: #888;
+  font-style: italic;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #222;
+  color: #fff;
+  margin-top: 1rem;
+}
+
+/* Responsive nav & hero */
+
+@media (max-width: 700px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+  }
+
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
